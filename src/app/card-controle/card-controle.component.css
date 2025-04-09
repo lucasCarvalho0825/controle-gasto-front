@@ -1,0 +1,96 @@
+/* Container principal para centralizar o card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante que ocupa toda a altura da tela */
+  padding: 20px; /* Espaço para evitar bordas coladas */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+/* Estilos principais do card */
+.card {
+  max-width: 400px;
+  width: 100%; /* Para telas menores */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Título do card */
+.card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Estilo do formulário */
+.card-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+/* Botões alinhados à direita */
+.card-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  min-width: 100px;
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+  }
+
+  .btn {
+    min-width: 80px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Estilo para os inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda leve */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Efeito de transição */
+}
+
+input:focus {
+  outline: none; /* Remove o outline padrão */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  transform: scale(1.02); /* Pequeno efeito de "zoom" */
+}
+
+
+@media (max-width: 480px) {
+  .btn {
+    min-width: 70px;
+    font-size: 0.8rem;
+  }
+}

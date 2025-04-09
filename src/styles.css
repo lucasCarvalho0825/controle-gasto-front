@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body {
+  background-color: #2F4F4F;
+  color: black; /* Opcional: Para garantir que o texto seja legível */
+  margin: 0; /* Remove a margem padrão */
+  font-family: Arial, sans-serif; /* Define uma fonte padrão */
+}
